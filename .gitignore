@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated battery evidence may contain serial numbers and local paths.
+reports/
+*.log
+lvtopsun-lv48100-*.json
+lvtopsun-lv48100-*.json.sha256
+lvtopsun-lv48100-*.md
+lvtopsun-lv48100-*.md.sha256
