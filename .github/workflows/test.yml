@@ -9,7 +9,9 @@ permissions:
 
 jobs:
   offline-tests:
-    runs-on: ubuntu-latest
+    # Ubuntu 24.04 remains the supported GitHub runner for the Python 3.9
+    # compatibility leg; ubuntu-latest moved to 26.04 where 3.9 is unavailable.
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         python-version: ["3.9", "3.12"]
